@@ -9,7 +9,11 @@
 
    
 *  Qué compañía inventó el lenguaje JavaScript?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
 1) Mozilla
 2) Netscape  X
 3) Sun
@@ -17,7 +21,11 @@
     
   
 * JavaScript es un lenguaje de programación
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
  1) Compilado
  2) Interpretado  X
  3) No estructurado
@@ -25,6 +33,10 @@
     
   
 * Qué es el DOM
+:PROPERTIES:
+:points: 1
+:END:
+
     
  1) Un atributo
  2) Un videojuego
@@ -33,6 +45,10 @@
     
   
 * Dónde se puede insertar código JavaScript en un documento HTML
+:PROPERTIES:
+:points: 1
+:END:
+
     
  1) En el &lt;head&gt;
  2) En el &lt;body&gt;
@@ -41,6 +57,10 @@
     
   
 * El DOM representa una página como un
+:PROPERTIES:
+:points: 1
+:END:
+
     
  1) Un árbol  X
  2) Una tabla
@@ -49,7 +69,11 @@
     
   
 * Cual es el acrónimo de DOM
-    
+:PROPERTIES:
+:points: 
+:END:
+
+
   1) Document Object Markup  X
   2) Document Of Model
   3) Domain Object Model
@@ -57,7 +81,11 @@
     
   
 * Como se pone en JavaScript un comentario de una línea
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+  
   1) # Comentario
   2) // Comentario  X
   3) /* Comentario
@@ -73,6 +101,10 @@
     
   
 * En JavaScript las posiciones de los caracteres de una cadena empiezan en
+:PROPERTIES:
+:points: 1
+:END:
+
     
   1) -1
   2) 0  X
@@ -81,6 +113,10 @@
     
   
 * Cual es la forma correcta de crear un Array en JavaScript
+:PROPERTIES:
+:points: 1
+:END:
+
     
   1) var txt = new Array:1=(“tim”),2=(“kim”),3=(“jim”)
   2) var txt = new Array(1=”tim”,2=”kim”,3=”jim”)
@@ -89,7 +125,11 @@
     
   
 * En JavaScript cual es la función que se emplea para convertir una cadena a minúscula
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+   
   1) lower()
   2) lowerCase()
   3) toLower()
@@ -97,7 +137,11 @@
     
   
 * En JavaScript, ¿cómo se muestra una ventana con el mensaje “Hola mundo!”?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+  
   1) alert(“Hola mundo!”);  X
   2) alertBox = “Hola mundo!”;
   3) alertBox(“Hola mundo!);
@@ -105,7 +149,11 @@
     
   
 * En JavaScript, el operador para concatenar cadenas es
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) ”+”  X
   2) ”%”
   3) ”.”
@@ -113,7 +161,11 @@
     
   
 * En JavaScript, ¿cómo se llama a una función llamada “miFuncion”?
-    
+:PROPERTIES:
+:points: 
+:END:
+
+
   1) call function miFuncion()
   2) call miFuncion()
   3) miFuncion()
@@ -121,7 +173,11 @@
     
   
 * En JavaScript, para obtener un carácter concreto de una cadena según su posición se emplea la función
-    
+:PROPERTIES:
+:points: 
+:END:
+
+
   1) char()
   2) charAt()
   3) value()  X
@@ -129,15 +185,23 @@
     
   
 * En JavaScript, ¿cómo se escribe un bucle “for” para contar desde 1 hasta 5?
-    
-  1) for(i &lt;= 5; i++)  X
-  2) for(i = 1; i &lt;= 5; i++)
+:PROPERTIES:
+:points: 1
+:END:
+
+
+  1) for(i &lt;= 5; i++)  
+  2) for(i = 1; i &lt;= 5; i++)  X
   3) for i = 1 to 5
   4) Ninguna de las anteriores
     
   
 * En JavaScript, ¿cómo se define una función llamada “miFuncion”?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) Function:miFuncion()
   2) function-&gt;miFuncion()
   3) function miFuncion()  X
@@ -145,7 +209,11 @@
     
   
 * En JavaScript, ¿cómo se escribe una sentencia condicional para comprobar que la variable “i” es igual a 5?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) if i=5 then
   2) if(i=5)
   3) if i==5 then
@@ -153,7 +221,11 @@
     
   
 * En JavaScript, ¿cómo se redondea el número 7.25 al entero más cercano?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) round(7.25)
   2) Math.round(7.25)  X
   3) Math.rnd(7.25)
@@ -161,7 +233,11 @@
     
   
 * En JavaScript, para finalizar un bucle de tipo “for” se emplea
-    
+:PROPERTIES:
+:points: 
+:END:
+
+
   1) No se puede
   2) Exit for
   3) break
@@ -169,7 +245,11 @@
     
   
 * En una página XHTML, ¿cuál es la forma correcta de hacer referencia a un fichero externo con código JavaScript llamado “xxx.js”?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) &lt;script name=”xxx.js” type=”text/javascript” /&gt;
   2) &lt;script href=”xxx.js” type=”text/javascript” /&gt;
   3) &lt;script src=”xxx.js” type=”text/javascript” /&gt;  X
@@ -177,7 +257,11 @@
     
   
 * Respecto al final de instrucción en JavaScript
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) Se emplea el punto y coma (;), pero es opcional
   2) No se emplea ningún delimitador
   3) Se emplea el punto y coma (;) y es obligatorio  X
@@ -185,7 +269,11 @@
     
   
 * En JavaScript, ¿cómo se calcula el máximo de los números 2 y 4?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) ceil(2, 4)
   2) top(2, 4)
   3) Math.ceil(2, 4)
@@ -193,7 +281,11 @@
     
   
 * En JavaScript, ¿cómo se escribe una sentencia condicional para comprobar que la variable “i” es distinta de 5?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) if(i &lt;&gt; 5)
   2) if(i != 5)  X
   3) if i &lt;&gt; 5
@@ -201,7 +293,11 @@
     
   
 * ¿Qué etiqueta de HTML se emplea para escribir código JavaScript?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) &lt;javascript&gt;
   2) &lt;script&gt;  X
   3) &lt;scripting&gt;
@@ -209,7 +305,11 @@
     
   
 * En JavaScript, ¿cómo se llama el objeto que representa una expresión regular?
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) No hay ningún objeto
   2) ExpReg
   3) RegExp  X
@@ -217,7 +317,11 @@
     
   
 * JavaScript fue diseñado por
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) Bill Gates
   2) Bjarne Stroustrup
   3) Brendan Eich  X
@@ -225,7 +329,11 @@
     
   
 * En una navegador web, para escribir algo en la consola se emplea
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) console.append()
   2) console.log()  X
   3) console.print()
@@ -233,7 +341,11 @@
     
   
 * Con Git qué comando usamos para añadir ficheros
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) Git commit
   2) Git push
   3) Git add  X
@@ -241,7 +353,11 @@
     
   
 * Con Git qué comando usamos para subir ficheros al repositorio
-    
+:PROPERTIES:
+:points: 1
+:END:
+
+
   1) Git commit
   2) Git push  X
   3) Git add
