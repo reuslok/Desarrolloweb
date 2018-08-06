@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+              <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css1.css">
+    <script src="PJSheet.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Creador de Personajes</title>
+      <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    .row.content {height: 450px}
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+<style>
+	.bs-example{
+    	margin: 20px;
+    }
+</style>
+
+  
+      <style>
+          body {
+    background-image: url("Mji0eJV.jpg");
+   
+}
+
+.cuerpo{
+    
+  display: inline;
+  padding: 0.5rem;
+}
+#ul01
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+.menuleft
+ {
+    float: left;
+}
+.menuleft a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.menuleft a:hover {
+    background-color: #111111;
+}
+#ul02
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f8f8f8;
+}
+
+body .container {
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  max-width: 740px;
+  height: 900px;
+  margin: 30px auto;
+  background-color: #ffffff;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+}
+
+body .container .half {
+  float: left;
+  width: 55%;
+  height: 100%;
+  padding: 58px 0px 10px 30px;
+  background-color: transparent;
+}
+
+body .container .half.bg {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/fe/41/d8/fe41d8ac345a409b0d662726149d4a3a.jpg");
+  background-size: 440px;
+  width: 45%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+	background-position-y: 10%;
+}
+
+body .container h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  text-indent: 6px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #263238;
+}
+
+body .container h2 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 23px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #263238;
+}
+
+body .container h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size:.9em;
+}
+
+body .container h3 span.detail {
+	text-transform: capitalize;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.detail{
+	font-size: .8em;
+	font-style: italic;
+}
+
+a {
+	color: #263238;
+}
+
+body .container .tabs {
+  width: 100%;
+  margin-bottom: 29px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+body .container .tabs .tab {
+  display: inline-block;
+  margin-bottom: -1px;
+  padding: 20px 15px 10px;
+  cursor: pointer;
+  letter-spacing: 0;
+  border-bottom: 1px solid #d9d9d9;
+
+  user-select: none;
+  transition: all 0.1s ease-in-out;
+}
+
+body .container .tabs .tab a {
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d9d9d9;
+  transition: all 0.1s ease-in-out;
+}
+
+
+
+body .container .tabs .tab.active {
+  border-bottom: 1px solid #263238;
+}
+
+body .container .content .stats{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+body .container .content .stats.abilities {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+body .container .content .stats div {
+	margin: 0 10px;
+}
+
+body .container .content .stats .stat {
+	font-size: 14px;
+	text-align: center;
+}
+
+.actions{
+	margin-bottom: 20px;
+}
+
+.actions p {
+	margin: 10px;
+	font-size: .9em;
+}
+
+.profs ul, .actions ul{
+	margin: 10px;
+	font-size: .9em;
+}
+
+.profs ul li, .actions ul li{
+	margin: 10px auto;
+}
+
+body .container .content form {
+  position: relative;
+  height: 300px;
+}
+
+
+body .container .content .stats label{
+	text-align: center;
+	width: 100%;
+}
+
+body .container .content .stats.abilities label{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+
+body .container .content input.inpt {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin-bottom: 12px;
+  padding: 10px 13px;
+  color: #999999;
+  border: 1px solid #d9d9d9;
+  background: transparent;
+
+  border-radius: 2px;
+}
+
+
+body .container .content input.inpt.number {
+	width: 60px;
+}
+
+
+
+body .container .content input.submit {
+  font-size: 12px;
+  line-height: 42px;
+  display: block;
+  width: 100%;
+  height: 42px;
+  cursor: pointer;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #263238;
+  border: 1px solid #263238;
+  background: transparent;
+
+  border-radius: 2px;
+}
+    </style>
+
+
+
+  
+  
+  <script>
+      
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+   
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+     
+             
+  <li class="menuleft"><a href="index.html">Inicio</a></li>
+  <li class="menuleft"><a href="Consejos.html">Consejos de master</a></li>
+  <li class="menuleft"><a href="Fichas.html">Fichas</a></li>
+  <li class="menuleft"><a href="Paginas.html">Páginas interesantes</a></li>
+          <li class="menuleft"><a href="blarj2.html">Creador de personajes</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+  
+  
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        <div class="Razas">
+  <p id="Raza Enano" onclick="Raza()"><a href="#Enano">Enano</a></p>
+<p id="Raza Elfo" onclick="Raza()"><a href="#Elfo">Elfo</a></p>
+<p id="Raza Mediano" onclick="Raza()"><a href="#Mediano">Mediano</a></p>
+<p id="Raza Humano" onclick="Raza()"><a href="#Humano">Humano</a></p>
+<p id="Raza Dracónido" onclick="Raza()"><a href="#Dracónido">Dracónido</a><p>
+<p id="Raza Gnomo" onclick="Raza()"><a href="#Gnomo">Gnomo</a></p>
+<p id="Raza Semielfo" onclick="Raza()"><a href="#Semielfo">Semielfo</a></p>
+<p id="Raza Semiorco" onclick="Raza()"><a href="#Semiorco">Semiorco</a></p>
+<p id="Raza Tiflin" onclick="Raza()"><a href="#Tiflin">Tiflin</a></p>
+            </div>
+    </div>
+    <div class="col-sm-8 text-left"> 
+        
+<section class="container">
+    <p>Escribe el nombre de tu personaje: <input type="text" id="fnombre" onchange="Name();"> y nivel <input type="text" id="fnivel" onchange="Level();"></p>
+		    <article class="half">
+			        <h1 id="Name">Felyn Telenna</h1>
+				 		<h2 id="Level">Level 3</h2>
+				 		<p class="detail" style="text-align:center">Medium Humanoid, Assassin, Neutral Evil</p>
+			        <div class="tabs">
+						<span class="tab main active"><a href="#abilities">Abilities</a></span>
+						<span class="tab actions"><a href="#actions">Actions</a></span>
+						<span class="tab feats"><a href="#feats">Feats</a></span>
+						<span class="tab bg"><a href="#background">BG</a></span>
+						<span class="tab equip"><a href="#equipment">Equipment</a></span>
+			        </div>
+			        <div class="content">
+				            <div class="main-cont cont">
+									 <form action="#" method="post" enctype="multipart/form-data">
+										 
+										 <div class="stats">
+											 <div>
+											  <label for="hitpoints">Hitpoints</label>
+											  <input type="number" id="hitpoints" class="inpt number" value="18">
+											 </div>
+											 	 <div>
+												 <label for="armor">Armor Class</label>
+												 <input type="number" name="armor" id="armor" class="inpt number" required="required" placeholder="0" value="15">
+											 </div>
+											 <div>
+											 	<label for="speed">Speed</label>
+										  		<input type="number" name="speed" id="speed" class="inpt number" required="required" placeholder="0" value="30">
+											 </div>
+										 </div>
+										 <hr>
+										  <div class="stats abilities">
+											 <div>
+											  <label for="str">STR</label>
+											  <div id="str" class="stat" contenteditable="true">8 (+0)</div>
+											 </div>
+											 	 <div>
+												 <label for="dex">DEX</label>
+												 <div id="dex" class="stat" contenteditable="true">16 (+3)</div>
+											 </div>
+											 <div>
+											 	<label for="con">CON</label>
+										  		<div id="con" class="stat" contenteditable="true">10 (+0)</div>
+											 </div>
+										 </div>
+										 <div class="stats abilities">
+											 	 <div>
+											 	<label for="int">INT</label>
+										  		<div id="int" class="stat" contenteditable="true">13 (+1)</div>
+											 </div>
+											 <div>
+											 	<label for="wis">WIS</label>
+										  		<div id="wis" class="stat" contenteditable="true">12 (+1)</div>
+											 </div>
+											 <div>
+											 	<label for="cha">CHA</label>
+										  		<div id="cha" class="stat" contenteditable="true">16 (+3)</div>
+											 </div>
+										 </div>
+										 <hr>
+										 
+										 <div class="profs">
+											 <h3>Proficiencies <span class="detail">(+2 Proficiency Bonus)</span></h3>
+											 
+											 <ul>
+												 <li><span class="bold">Saving Throws</span> <span contenteditable="true">Dex +5, Int +3</span></li>
+												 <li><span class="bold">Skills</span><span contenteditable="true"> Deception +5, Insight +3, Investigation +3, Perception +5*, Persuasion +5, Sleight of Hand +5, Stealth +7*</span></li>
+												 <li><span class="bold">Tools</span> <span contenteditable="true">disguise kit, poisoner’s kit, thieves’ tools</span></li>
+												 <li><span class="bold">Armor</span> <span contenteditable="true">Light Armor (studded leather)</span></li>
+												 <li><span class="bold">Weapons</span> <span contenteditable="true">simple weapons, hand crossbows, longswords, rapiers, shortswords</span></li>
+												 <li><span class="bold">Senses</span> <span contenteditable="true">passive (Perception) 15</span></li>
+												 <li><span class="bold">Languages</span> <span contenteditable="true">Common, Elvish, Undercommon, thieves’ cant</span></li>
+											 </ul>
+										 </div>
+
+								  </form>
+									
+    				        </div>
+                        </div>
+    				        <div class="actions-cont cont">
+                				<form action="#" method="post" enctype="multipart/form-data">
+									  <div class="actions">
+										 <h3>Actions</h3>
+										  <p><span class="bold">Attack.</span> You can attack once when you take this action, using the following:</p>
+
+										 <ul>
+											 <li><span class="bold">Shortsword.</span> <span contenteditable="true">Melee Weapon Attack: +5 to hit, reach 5 ft., one target.<br>Hit: 1d6 + 3 piercing damage.</span></li>
+											 
+											 <li><span class="bold">Dagger.</span><span contenteditable="true"> Melee Weapon Attack: +5 to hit, reach 5 ft., one target. <br>Hit: 1d4 + 3 piercing damage.</span></li>
+											 
+											 <li><span class="bold">Hand Crossbow.</span> <span contenteditable="true">Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target.<br>Hit: 1d6 + 3 piercing damage.</span></li>
+											 <li><span class="bold">Armor</span> <span contenteditable="true">Light Armor (studded leather)</span></li>
+											 
+											 <li><span class="bold">Spellcasting</span> <span contenteditable="true">Drow Magic (drow trait).</span></li>
+										 </ul>
+										</div>
+										
+										<div class="actions">
+										 <h3>Bonus Actions</h3>
+
+										 <ul>
+											 <li><span class="bold">Cunning Action.</span> <span contenteditable="true">Your quick thinking and agility allow you to move and act quickly. You can take a Bonus Action on each of your turns in Combat. This action can be used only to take the Dash, Disengage, or Hide action.</span></li>
+											 
+											 <li><span class="bold">Two-weapon Fighting.</span><span contenteditable="true">When you take the Attack action with a shortsword in one hand, you can use a bonus action to attack with a dagger in the other hand. You don’t add your ability modifier to the damage of the bonus attack.</span></li>
+										 </ul>
+										</div>
+										
+										<div class="actions">
+										 <h3>Options</h3>
+
+										 <ul>
+											 <li><span class="bold">Sneak Attack.</span> <span contenteditable="true">Once per turn, you can deal an extra 2d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</span></li>
+											 
+											 <li><span class="bold">Assassinate. </span><span contenteditable="true">You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</span></li>
+										 </ul>
+										</div>
+        					      </form>
+            				</div>
+						  
+						        <div class="feats-cont cont">
+                				<form action="#" method="post" enctype="multipart/form-data">
+									  <div class="actions">
+										 <h3>Rogue Features</h3>
+										
+										 <ul>
+											 <li><span class="bold">Sneak Attack.</span> <span contenteditable="true">Once per turn, you can deal an extra 2d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</span></li>
+											 
+											 <li><span class="bold">Expertise.</span><span contenteditable="true"> Your proficiency bonus is doubled for any ability check you make using your Perception or Stealth skills.</span></li>
+											 
+											 <li><span class="bold">Assassinate.</span> <span contenteditable="true">You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</span></li>
+											 
+										 </ul>
+										</div>
+										
+										<div class="actions">
+										 <h3>Drow Traits</h3>
+
+										 <ul>
+											 <li><span class="bold">Superior Darkvision</span> <span contenteditable="true">You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.</span></li>
+											 
+											 <li><span class="bold">Sunlight Sensitivity.</span><span contenteditable="true">You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</span></li>
+											 
+											 <li><span class="bold">Fey Ancestry.</span><span contenteditable="true">You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</span></li>
+											 
+											 <li><span class="bold">Trance.</span><span contenteditable="true">Instead of sleeping, you meditate deeply, remaining semiconscious, for 4 hours a day, gaining the same benefit that a human does from 8 hours of sleep.</span></li>
+											 
+											 <li><span class="bold">Drow Magic.</span><span contenteditable="true">You know the <a href="https://roll20.net/compendium/dnd5e/Dancing%20Lights#h-Dancing%20Lights" target="_blank">dancing lights</a> cantrip, and you can cast the <a href="https://roll20.net/compendium/dnd5e/Faerie%20Fire#h-Faerie%20Fire" target="_blank">faerie fire</a> spell once per day (save DC 13). Charisma is your spellcasting ability for these spells.</span></li>
+										 </ul>
+										</div>
+        					      </form>
+            				</div>
+						  
+						  <div class="bg-cont cont">
+                				<form action="#" method="post" enctype="multipart/form-data">
+									  <div class="actions">
+										  <h3>Background <span class="detail">(Charlatan)</span></h3>
+										  <p style="font-style:italic">“I am in the business of removing
+											  obstacles.”</p>
+											<p>Without divine or arcane magical
+											ability, your options in the
+											cutthroat world of drow society were
+											limited. You either became an expert in
+											death, or you died young.
+											After honing your murderous arts in
+											the Underdark, you made your escape
+											from the city of your birth to strike out
+											on your own. Your reputation as a nighinvisible
+											killer strikes fear into those who
+											would wrong you. But those who respect
+											you earn your ready support.</p>
+										
+										 <ul>
+											 <li>You know what makes people tick, you
+													can tease out their heart’s desires after a
+													few minutes of conversation, and with a
+													few leading questions you can read them
+													like they were children’s books.
+													Your favorite scheme is putting on new
+													identities. Your facility with disguise
+													makes it easy to insinuate yourself
+													into any setting, the better to get your
+													target alone.</li>
+											 <li><span class="bold">False Identity. </span> 
+												 <span contenteditable="true">You have created
+													a second identity that includes
+													documentation, established
+													acquaintances, and disguises that allow
+													you to assume that persona. Additionally,
+													you can forge documents including
+													official papers and personal letters, as
+													long as you have seen an example of the
+													kind of document or the handwriting you
+													are trying to copy.</span></li>
+											 
+											 <li><span class="bold">Faction. </span>
+											   <span contenteditable="true"> You are a member of the
+												Zhentarim, an organization of welltrained
+												mercenaries, savvy rogues, and
+												crafty warlocks who seek to expand their
+												influence and power.</span></li>
+											 
+											 <li><span class="bold">Personality Trait. </span>
+												 <span contenteditable="true">You lie about almost everything, even when there’s no good reason to.</span></li>
+											 
+											 <li><span class="bold">Ideal. </span>
+												 <span contenteditable="true">You are a free spirit—no one tells you what to do.</span></li>
+											 
+											 <li><span class="bold">Bond. </span>
+												 <span contenteditable="true">Your mentor, a master drow assassin, is in prison for a murder you committed and you're totally okay with it.</span></li>
+											 
+											 <li><span class="bold">Flaw. </span>
+												 <span contenteditable="true">You’re convinced that no one could ever fool you the way you fool others.</span></li>
+											 
+										 </ul>
+										</div>
+        					      </form>
+            				</div>
+						  
+						  <div class="equip-cont cont">
+                				<form action="#" method="post" enctype="multipart/form-data">
+									  <div class="actions">
+										 <h3>Rogue Features</h3>
+										
+										 <ul>
+											 <li><span class="bold">Sneak Attack.</span> <span contenteditable="true">Once per turn, you can deal an extra 2d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</span></li>
+											 
+											 <li><span class="bold">Expertise.</span><span contenteditable="true"> Your proficiency bonus is doubled for any ability check you make using your Perception or Stealth skills.</span></li>
+											 
+											 <li><span class="bold">Assassinate.</span> <span contenteditable="true">You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</span></li>
+											 
+										 </ul>
+										</div>
+										
+										<div class="actions">
+										 <h3>Drow Traits</h3>
+
+										 <ul>
+											 <li><span class="bold">Superior Darkvision</span> <span contenteditable="true">You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.</span></li>
+											 
+											 <li><span class="bold">Sunlight Sensitivity.</span><span contenteditable="true">You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</span></li>
+											 
+											 <li><span class="bold">Fey Ancestry.</span><span contenteditable="true">You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</span></li>
+											 
+											 <li><span class="bold">Trance.</span><span contenteditable="true">Instead of sleeping, you meditate deeply, remaining semiconscious, for 4 hours a day, gaining the same benefit that a human does from 8 hours of sleep.</span></li>
+											 
+											 <li><span class="bold">Drow Magic.</span><span contenteditable="true">You know the <a href="https://roll20.net/compendium/dnd5e/Dancing%20Lights#h-Dancing%20Lights" target="_blank">dancing lights</a> cantrip, and you can cast the <a href="https://roll20.net/compendium/dnd5e/Faerie%20Fire#h-Faerie%20Fire" target="_blank">faerie fire</a> spell once per day (save DC 13). Charisma is your spellcasting ability for these spells.</span></li>
+										 </ul>
+										</div>
+        					      </form>
+            				</div>
+
+		    </article>
+		    <div class="half bg"></div>
+	</section>
+    </div>
+    <div class="col-sm-2 sidenav">
+        <div class="Clase">
+      <p><a href="#">Bárbaro</a></p>    
+      <p><a href="#">Bardo</a></p>    
+      <p><a href="#">Brujo</a></p>    
+      <p><a href="#">Clérigo</a></p>    
+      <p><a href="#">Druida</a></p>    
+      <p><a href="#">Explorador</a></p>    
+      <p><a href="#">Guerrero</a></p>    
+      <p><a href="#">Hechicero</a></p>    
+      <p><a href="#">Mago</a></p>    
+      <p><a href="#">monje</a></p>    
+      <p><a href="#">Paladín</a></p>    
+      <p><a href="#">Pícaro</a></p> 
+            </div>
+      </div>
+    </div>
+
+    <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  
+
+    <script >
+        
+      $('.tabs .tab').click(function () {
+  if ($(this).hasClass('main')) {
+    $('.tabs .tab').removeClass('active');
+    $(this).addClass('active');
+    $('.cont').hide();
+    $('.main-cont').show();
+  }
+  if ($(this).hasClass('actions')) {
+    $('.tabs .tab').removeClass('active');
+    $(this).addClass('active');
+    $('.cont').hide();
+    $('.actions-cont').show();
+  }
+  if ($(this).hasClass('feats')) {
+    $('.tabs .tab').removeClass('active');
+    $(this).addClass('active');
+    $('.cont').hide();
+    $('.feats-cont').show();
+  }
+  if ($(this).hasClass('bg')) {
+    $('.tabs .tab').removeClass('active');
+    $(this).addClass('active');
+    $('.cont').hide();
+    $('.bg-cont').show();
+  }
+  if ($(this).hasClass('equip')) {
+    $('.tabs .tab').removeClass('active');
+    $(this).addClass('active');
+    $('.cont').hide();
+    $('.equip-cont').show();
+  }
+});
+
+
+var actions = new Vue({
+  el: '#actions',
+  data: {
+    items: [
+    { title: 'Thing 1', desc: 'Foo' },
+    { title: 'Thing 2', desc: 'Bar' }] } });
+
+
+
+
+var bactions = new Vue({
+  el: '#bonus-actions',
+  data: {
+    items: [
+    { title: 'Thing 1', desc: 'Foo' },
+    { title: 'Thing 2', desc: 'Bar' }] } });
+
+
+
+
+var options = new Vue({
+  el: '#options',
+  data: {
+    items: [
+    { title: 'Thing 1', desc: 'Foo' },
+    { title: 'Thing 2', desc: 'Bar' }] } });
+
+    </script>
+       </body></html>
